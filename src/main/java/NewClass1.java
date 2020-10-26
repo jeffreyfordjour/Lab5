@@ -12,7 +12,7 @@
 public class NewClass1 {
     public static void main(String[] args) {
         int[] testd = {100,90,20,76,89};
-        TestData ts = new TestData(testd);
+        TestData ts = new TestData();
         ts.getTotal(testd);
         ts.getAverage(testd);
         ts.getHighest(testd);
@@ -21,10 +21,6 @@ public class NewClass1 {
 }
 
 class TestData {
-    private int[] testdata;
-    TestData(int[] testdata) {
-        this.testdata = testdata;
-    }
     
     public int getTotal(int[] array) {
         int total = 0;
