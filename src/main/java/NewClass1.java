@@ -8,9 +8,21 @@
  *
  * @author frys
  */
+
 public class NewClass1 {
+    public static void main(String[] args) {
+        int[] testd = {100,90,20,76,89};
+        TestData ts = new TestData(testd);
+        ts.getTotal(testd);
+        ts.getAverage(testd);
+        ts.getHighest(testd);
+        ts.getLowestt(testd);
+    }
+}
+
+class TestData {
     private int[] testdata;
-    NewClass1(int[] testdata) {
+    TestData(int[] testdata) {
         this.testdata = testdata;
     }
     
